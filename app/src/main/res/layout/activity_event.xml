@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_event"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/material_bluegrey700"
+                app:navigationIcon="@drawable/ic_action_close"
+                app:title="@string/menu_acara"
+                app:titleTextColor="@color/colorPrimary" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_event"
+            style="@style/circular_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:scrollbars="vertical" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

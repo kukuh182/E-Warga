@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_bg_gradient"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:tint="@color/colorPrimary"
+        app:backgroundTint="@color/md_bluegrey700"
+        android:src="@drawable/ic_action_tick" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_reg"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/md_bluegrey700"
+                app:navigationIcon="@drawable/ic_action_close"
+                app:title="@string/registrasi"
+                app:titleTextColor="@color/colorPrimary" />
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:orientation="vertical"
+            android:paddingBottom="80dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_profil_update_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:background="@drawable/shape_rectangle2"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/atv_deskripsi_wilayah"
+                    style="@android:style/TextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:lines="3"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/acb_pilih_wilayah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_rectangle1"
+                    android:text="@string/pilih_wilayah"
+                    android:textSize="12sp"
+                    android:padding="6dp"
+                    android:textColor="@color/material_white" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ib_back_login">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_reg_nik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:drawableLeft="@drawable/ic_action_idcard"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:hint="@string/nik"
+                            android:inputType="number"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_reg_namalengkap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:drawableLeft="@drawable/ic_action_username"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:hint="@string/full_name"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textColorHint="@color/colorPrimaryDark">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_reg_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:drawableLeft="@drawable/ic_action_password"
+                                android:drawableTint="@color/colorPrimaryDark"
+                                android:hint="@string/password"
+                                android:nextFocusForward="@+id/et_reg_repassword"
+                                android:inputType="textPassword"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textColorHint="@color/colorPrimaryDark">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_reg_repassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:drawableLeft="@drawable/ic_action_password"
+                                android:drawableTint="@color/colorPrimaryDark"
+                                android:hint="@string/password_renew"
+                                android:nextFocusForward="@+id/et_reg_email"
+                                android:inputType="textPassword"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_reg_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:drawableLeft="@drawable/ic_action_email"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:hint="@string/email"
+                            android:nextFocusForward="@+id/et_reg_smartphone"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textColorHint="@color/colorPrimaryDark">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_reg_smartphone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:drawableLeft="@drawable/ic_action_smartphone"
+                                android:drawableTint="@color/colorPrimaryDark"
+                                android:hint="@string/handphone"
+                                android:nextFocusForward="@+id/et_reg_phone"
+                                android:inputType="phone"
+                                android:maxLength="13"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/colorPrimary"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textColorHint="@color/colorPrimaryDark">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_reg_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:drawableLeft="@drawable/ic_action_phone"
+                                android:drawableTint="@color/colorPrimaryDark"
+                                android:hint="@string/telepon"
+                                android:nextFocusForward="@+id/et_rt"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textColorHint="@color/colorPrimaryDark">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_rt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:drawableLeft="@drawable/ic_action_home"
+                                android:drawableTint="@color/colorPrimaryDark"
+                                android:hint="@string/rt"
+                                android:nextFocusForward="@+id/et_rw"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:textColorHint="@color/colorPrimaryDark">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_rw"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:drawableLeft="@drawable/ic_action_house"
+                                android:drawableTint="@color/colorPrimaryDark"
+                                android:hint="@string/rw"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textColorHint="@color/colorPrimaryDark"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_kodepos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:drawableLeft="@drawable/ic_action_postalcode"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:hint="@string/kodepos"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            tools:ignore="InefficientWeight,RtlHardcoded" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorPrimaryDark">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_alamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:drawableLeft="@drawable/ic_action_address"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:hint="@string/alamat"
+                            android:inputType="text"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textColorHint="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            tools:ignore="InefficientWeight,RtlHardcoded" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/ll_panic_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="35dp">
+
+        <EditText
+            android:id="@+id/et_panic_button"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rectangle2"
+            android:hint="@string/information_urgent"
+            android:gravity="center"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_panicbutton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/ll_panic_button"
+        android:src="@drawable/siren"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_below="@+id/iv_panicbutton"
+        android:id="@+id/tv_using_panic_button"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:text="@string/using_panic_button"/>
+
+    <LinearLayout
+        android:layout_below="@+id/tv_using_panic_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_whitelist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:clickable="true"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/selector_rectangle4"
+            android:textSize="16sp"
+            android:text="@string/whitelist"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

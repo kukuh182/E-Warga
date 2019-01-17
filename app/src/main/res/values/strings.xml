@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">E-Warga</string>
+    <string name="app_detail_version">E-Warga {Beta}</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="more">View More</string>
+    <string name="less">View Less</string>
+
+    <string name="empty">Data Kosong</string>
+    <!-- Login Activity -->
+    <string name="nik">NIK</string>
+    <string name="email">Email</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="telepon">Telepon</string>
+    <string name="handphone">Handphone</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="pilih_wilayah">Pilih Wilayah</string>
+
+    <!-- Home Activity -->
+    <string name="menu_beranda">Beranda</string>
+    <string name="menu_tombol_darurat">Tombol Darurat</string>
+    <string name="menu_informasi">Informasi</string>
+    <string name="menu_akunsaya">Akun Saya</string>
+    <string name="menu_daftarwarga">Daftar Warga</string>
+    <string name="menu_acara">Acara</string>
+    <string name="menu_listpeta">Daftar Peta</string>
+    <string name="menu_peta">Peta</string>
+    <string name="menu_pengaduan">Pengaduan</string>
+    <string name="menu_pelayanan">Pelayanan</string>
+    <string name="menu_tandailokasi">Tandai Lokasi</string>
+    <string name="menu_detailwarga">Detail Warga</string>
+    <string name="menu_tentangkami">Tentang Kami</string>
+    <string name="menu_detaillibraries">Detail Libraries</string>
+    <string name="menu_gantipassword">Ganti Password</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_other">Other</string>
+
+    <!-- Ganti Password -->
+    <string name="ganti">Ganti</string>
+    <string name="password_old">Password Lama</string>
+    <string name="password_new">Password Baru</string>
+    <string name="password_renew">Ulang Password</string>
+
+    <string name="alamat">Alamat</string>
+    <string name="kodepos">Kode Pos</string>
+    <string name="tgl_lahir">Tanggal Lahir</string>
+    <string name="tpt_lahir">Tempat Lahir</string>
+    <string name="rt">RT</string>
+    <string name="rw">RW</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="tampilkan_lokasi">Tampilkan Lokasi</string>
+    <string name="update_lokasi">Update Lokasi</string>
+
+    <!-- Detail Warga -->
+
+    <string name="search_warga">Pencarian Warga</string>
+    <string name="search_agenda">Pencarian Agenda</string>
+    <string name="search_pengumuman">Pencarian Pengumuman</string>
+    <string name="search_berita">Pencarian Berita</string>
+    <string name="search_provinsi">Pencarian Provinsi</string>
+    <string name="search_kota">Pencarian Kota/Kab</string>
+    <string name="search_kecamatan">Pencarian Kecamatan</string>
+    <string name="search_kelurahan">Pencarian Kelurahan</string>
+
+    <string name="information_urgent">Informasi Darurat</string>
+    <string name="using_panic_button">#Tekan Selama 2 Detik Pada Tombol Sirene</string>
+    <string name="whitelist">Whitelist</string>
+
+    <string name="judul">Judul</string>
+    <string name="nama_lokasi">Nama Lokasi</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="keterangan_lokasi">Keterangan Lokasi</string>
+    <string name="kirim">Kirim</string>
+
+    <string name="company_name">Bengkel Aplikasi</string>
+    <string name="contact_phone">Phone</string>
+    <string name="contact_mail">E-Mail</string>
+    <string name="company_phone">085659195131</string>
+    <string name="company_email">admin@bengkelaplikasi.net</string>
+    <string name="company_address">Komplek Padasuka Estate Block C3</string>
+    <string name="main_developers">Main Developers</string>
+    <string name="list_main_developers">Tri Adhi Salman (System Analyst)\n\nArie Ardiansyah (Web Developer)\n\nDicky Wibisana (Web Developer)\n\nAzhar Zacky Ramadhan (Web Developer)\n\nKukuh Prakoso (Android Developer)\n\nIswan Fahrudin (Technical Support)</string>
+    <string name="used_libraries">Used Libraries</string>
+
+    <string name="retry">Retry</string>
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_pelayanan"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/material_bluegrey700"
+            app:navigationIcon="@drawable/ic_action_close"
+            app:title="@string/menu_pelayanan"
+            app:titleTextColor="@color/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/acs_grouplayanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@color/colorPrimaryDark"/>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/acs_jenislayanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@color/colorPrimaryDark"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/aet_judul"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:hint="@string/judul"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:padding="15dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/aet_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:hint="@string/deskripsi"
+                android:lines="5"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:padding="15dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/acb_kirimlayanan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/selector_rectangle1"
+                android:padding="12dp"
+                android:text="@string/kirim"
+                android:textColor="@color/material_white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
